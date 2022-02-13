@@ -25,22 +25,22 @@ const result = () => {
                         <td>{result.testScore+result.examScore}</td>
                         <td className='flex'>{(() =>{
                              if((result.testScore+result.examScore) > 70){
-                               return(<td className="text-center w-full"> {result.remark = "Excellent"}</td>)
+                               return(<td className="text-center w-full"> {result.remark = "A"}</td>)
                             }
                             else if((result.testScore+result.examScore) < 70 & (result.testScore+result.examScore) > 60){
-                                return(<td className="text-center w-full">{ result.remark= 'Very Good'}</td>)
+                                return(<td className="text-center w-full">{ result.remark= 'B'}</td>)
                             }
-                             else if((result.testScore+result.examScore) < 69 & (result.testScore+result.examScore) > 60){
-                                return(<td className="text-center w-full">{ result.remark= 'Good'}</td>)
+                             else if((result.testScore+result.examScore) < 60 & (result.testScore+result.examScore) > 50){
+                                return(<td className="text-center w-full">{ result.remark= 'C'}</td>)
                             }
-                             else if((result.testScore+result.examScore) < 60 & (result.testScore+result.examScore) > 40){
-                                return(<td className="text-center w-full">{ result.remark= 'Fair'}</td>)
+                             else if((result.testScore+result.examScore) < 50 & (result.testScore+result.examScore) > 44){
+                                return(<td className="text-center w-full">{ result.remark= 'D'}</td>)
                             }
-                             else if((result.testScore+result.examScore) < 39 & (result.testScore+result.examScore) > 10){
-                                return(<td className="text-center w-full">{ result.remark= 'Pass'}</td>)
+                             else if((result.testScore+result.examScore) < 45 & (result.testScore+result.examScore) > 40){
+                                return(<td className="text-center w-full">{ result.remark= 'E'}</td>)
                             }
                              else {
-                                return(<td className="text-center w-full">{ result.remark= 'Fail'}</td>)
+                                return(<td className="text-center w-full">{ result.remark= 'F'}</td>)
                             }
 
                         })()}</td>
